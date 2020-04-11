@@ -1,0 +1,75 @@
+html, body, pre, code, kbd, samp {
+  font-family: 'Courier Prime', monospace; }
+
+header {
+  background: #2D3D8B;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0; }
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; }
+
+.inner {
+  height: 100%;
+  width: 100%;
+  max-height: 360px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+
+.score {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 25px 0 0 0; }
+
+.word-box {
+  margin: 25px auto;
+  padding: 25px 0;
+  width: 90%;
+  min-width: 300px; }
+  .word-box.success {
+    border-color: #0DBD6E; }
+  .word-box.fail {
+    border-color: #991E20; }
+
+.word {
+  font-weight: 900;
+  font-size: 2.4rem; }
+
+.englisch,
+.artikel-reveal {
+  visibility: hidden; }
+  .englisch.show,
+  .artikel-reveal.show {
+    visibility: visible; }
+
+.select {
+  width: 100%;
+  padding: 25px 0; }
+
+.art-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.artikel {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 25%; }
+
+/*# sourceMappingURL=main.css.map */

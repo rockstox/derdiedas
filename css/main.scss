@@ -1,0 +1,96 @@
+// Colors
+$blue: #2D3D8B;
+$yellow: #F3C900;
+$gray: #D8D8D8;
+$green: #0DBD6E;
+$red: #991E20;
+
+html, body, pre, code, kbd, samp {
+  font-family: 'Courier Prime', monospace;
+}
+
+header {
+  background: $blue;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.inner {
+  height: 100%;
+  width: 100%;
+  max-height: 360px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.score {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 25px 0 0 0;
+}
+
+.word-box {
+  margin: 25px auto;
+  padding: 25px 0;
+  width: 90%;
+  min-width: 300px;
+
+  &.success {
+    border-color: $green;
+  }
+
+  &.fail {
+    border-color: $red;
+  }
+}
+
+.word {
+  font-weight: 900;
+  font-size: 2.4rem;
+}
+
+.englisch,
+.artikel-reveal {
+  visibility: hidden;
+  &.show {
+    visibility: visible;
+  }
+}
+
+.select {
+  width: 100%;
+  padding: 25px 0;
+}
+
+.art-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.artikel {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 25%;
+}
