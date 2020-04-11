@@ -5,12 +5,17 @@ $gray: #D8D8D8;
 $green: #0DBD6E;
 $red: #991E20;
 
+body {
+  height: 100vh;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
 html, body, pre, code, kbd, samp {
   font-family: 'Courier Prime', monospace;
 }
 
 header {
-  background: $blue;
+  background: black;
   width: 100%;
   display: flex;
   align-items: center;
@@ -24,46 +29,44 @@ header {
 }
 
 .container {
-  max-width: 500px;
   margin: 0 auto;
+  padding: 100px 0 0 0;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  overflow-y: hidden;
+
 }
 
 .inner {
-  height: 100%;
-  width: 100%;
-  max-height: 360px;
   padding: 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  background-color: white;
 }
 
 .score {
   font-weight: bold;
-  font-size: 1.3rem;
-  margin: 25px 0 0 0;
+  font-size: 2rem;
+  line-height: 1;
 }
 
 .word-box {
   margin: 25px auto;
   padding: 25px 0;
-  width: 90%;
   min-width: 300px;
 
   &.success {
     border-color: $green;
-    background-color: lighten($green, 30%);
+    background-color: lighten($green, 55%);
   }
 
   &.fail {
     border-color: $red;
-    background-color: lighten($red, 30%);
+    background-color: lighten($red, 55%);
   }
 }
 
@@ -92,7 +95,7 @@ header {
 }
 
 .artikel {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   width: 25%;
 }

@@ -1,8 +1,12 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); }
+
 html, body, pre, code, kbd, samp {
   font-family: 'Courier Prime', monospace; }
 
 header {
-  background: #2D3D8B;
+  background: black;
   width: 100%;
   display: flex;
   align-items: center;
@@ -14,38 +18,37 @@ header {
   font-weight: bold; }
 
 .container {
-  max-width: 500px;
   margin: 0 auto;
+  padding: 100px 0 0 0;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh; }
+  overflow-y: hidden; }
 
 .inner {
-  height: 100%;
-  width: 100%;
-  max-height: 360px;
   padding: 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: white; }
 
 .score {
   font-weight: bold;
-  font-size: 1.3rem;
-  margin: 25px 0 0 0; }
+  font-size: 2rem;
+  line-height: 1; }
 
 .word-box {
   margin: 25px auto;
   padding: 25px 0;
-  width: 90%;
   min-width: 300px; }
   .word-box.success {
-    border-color: #0DBD6E; }
+    border-color: #0DBD6E;
+    background-color: #e5fdf2; }
   .word-box.fail {
-    border-color: #991E20; }
+    border-color: #991E20;
+    background-color: #f7d8d9; }
 
 .word {
   font-weight: 900;
@@ -68,7 +71,7 @@ header {
   align-items: center; }
 
 .artikel {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   width: 25%; }
 

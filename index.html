@@ -29,19 +29,22 @@
     </a>
   </header>
   <div class="container">
-    <div class="inner">
+    <div class="inner nes-container is-rounded">
       <section class="main">
-        <div id="score" class="nes-text is-success score">0</div>
-        <div id="wordBox" class="word-box nes-container with-title is-centered" data-artikel="">
-          <p class="title">Noun</p>
-          <div id="artikel" class="artikel-reveal" data-artikel=""></div>
-          <div id="word" class="word" data-deutsch=""></div>
-          <div id="englisch" class="englisch" data-englisch=""></div>
+        <div class="nes-container with-title is-rounded is-centered">
+          <p class="title">score</p>
+          <div id="score" class="nes-text is-success score">0</div>
+        </div>
+
+        <div id="wordBox" class="word-box nes-container" data-artikel="">
+          <div id="artikel" class="artikel-reveal" data-artikel="">loading..</div>
+          <div id="word" class="word" data-deutsch="">loading..</div>
+          <div id="englisch" class="englisch" data-englisch="">loading..</div>
         </div>
       </section>
       <section class="select">
         <div id="draggable-list" class="art-container">
-          <button class="artikel nes-btn is-primary" id="der" draggable="true" data-artikel="der">DER</button>
+          <div class="artikel nes-btn is-primary" id="der" draggable="true" data-artikel="der">DER</div>
           <div class="artikel nes-btn is-primary" id="die" draggable="true" data-artikel="die">DIE</div>
           <div class="artikel nes-btn is-primary" id="das" draggable="true" data-artikel="das">DAS</div>
         </div>
