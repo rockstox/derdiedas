@@ -107,7 +107,7 @@ function showDetails() {
   setTimeout(function() {
     artikel.classList.remove('show');
     englisch.classList.remove('show');
-  },1000);
+  },2000);
 
 }
 
@@ -116,7 +116,7 @@ function showSuccessState() {
   wordBox.classList.add('success');
   setTimeout(function() {
     wordBox.classList.remove('success');
-  }, 1000);
+  }, 2000);
 }
 
 function showFailState() {
@@ -124,7 +124,7 @@ function showFailState() {
   wordBox.classList.add('fail');
   setTimeout(function() {
     wordBox.classList.remove('fail');
-  }, 1000);
+  }, 2000);
 }
 
 function updateDom () {
@@ -137,7 +137,7 @@ function updateDom () {
     word.innerHTML = gameData.currentNoun.deutsch;
     englisch.innerHTML = gameData.currentNoun.englisch;
     artikel.innerHTML = gameData.currentNoun.artikel;
-  }, 1000);
+  }, 2000);
   // score.innerHTML = gameData.score;
   // word.innerHTML = gameData.currentNoun.deutsch;
   // englisch.innerHTML = gameData.currentNoun.englisch;
